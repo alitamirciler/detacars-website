@@ -54,10 +54,10 @@ export default function Home() {
           </p>
 
           <div className="heroActions">
-            <a className="primary" href={whatsappUrl} target="_blank">
+            <a className="primary heroButton" href={whatsappUrl} target="_blank">
               <MessageCircle size={20} /> Aracımı Değerlendir
             </a>
-            <a className="secondaryDark" href={sahibindenUrl} target="_blank">
+            <a className="secondaryDark heroButton" href={sahibindenUrl} target="_blank">
               Satıştaki Araçlar
             </a>
           </div>
@@ -138,7 +138,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="cards three">
+        <div className="cards three processCards">
           <article>
             <MessageCircle />
             <h3>1. Bilgileri paylaşın</h3>
@@ -217,30 +217,47 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="iletisim" className="formSection">
+      <section id="iletisim" className="contactSection">
         <div className="sectionHead">
           <p className="eyebrow dark">İletişim</p>
-          <h2>Aracınızı değerlendirelim</h2>
+          <h2>Detacars ile iletişime geçin</h2>
           <p>
-            Marka, model, kilometre ve hasar bilgisini WhatsApp üzerinden gönderin.
-            Uygun araçlarda hızlı ön değerlendirme paylaşalım.
+            Araç alım, satış, takas veya güncel stoklarımız hakkında bilgi almak için
+            bizimle iletişime geçebilirsiniz.
           </p>
+        </div>
 
-          <br />
+        <div className="contactGrid">
+          <a href="tel:+905383642991">
+            <Phone />
+            <strong>0538 364 29 91</strong>
+            <span>Mobil</span>
+          </a>
 
+          <a href="tel:+902242116556">
+            <Phone />
+            <strong>0224 211 65 56</strong>
+            <span>Sabit hat</span>
+          </a>
+
+          <a href="mailto:info@detacars.com.tr">
+            <Mail />
+            <strong>info@detacars.com.tr</strong>
+            <span>E-posta</span>
+          </a>
+
+          <div>
+            <MapPin />
+            <strong>Bursa</strong>
+            <span>Konum bilgisi için iletişime geçin</span>
+          </div>
+        </div>
+
+        <div className="centerCta">
           <a className="primary" href={whatsappUrl} target="_blank">
-            <MessageCircle size={20} /> WhatsApp’tan Bilgi Gönder
+            <MessageCircle size={20} /> WhatsApp’tan Yaz
           </a>
         </div>
-      </section>
-
-      <section className="finalCta">
-        <h2>Alırken de satarken de netlik.</h2>
-        <p>Şeffaf değerlendirme ve güvenilir ticaret için Detacars ile iletişime geçin.</p>
-
-        <a className="primary" href={whatsappUrl} target="_blank">
-          <MessageCircle size={20} /> WhatsApp’tan Yaz
-        </a>
       </section>
 
       <footer className="footer">
