@@ -1,18 +1,14 @@
 import {
   Car,
   CheckCircle2,
-  Clock3,
   MessageCircle,
   ShieldCheck,
-  XCircle,
   Banknote,
   FileCheck,
   Phone,
   Mail,
   MapPin,
-  RefreshCw,
   Store,
-  Handshake,
   SearchCheck,
   BadgeCheck
 } from 'lucide-react';
@@ -260,10 +256,6 @@ export default function Home() {
         <br />
         © 2026 Detacars Otomotiv
       </footer>
-
-      <a className="floating" href={whatsappUrl} target="_blank">
-        <MessageCircle size={28} />
-      </a>
     </main>
   );
 }

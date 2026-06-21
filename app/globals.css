@@ -8,8 +8,8 @@ a{text-decoration:none;color:inherit}
 .mark{background:#0e8f3d;color:#fff;border-radius:12px;padding:8px 11px}
 nav{display:flex;gap:28px;color:#333}
 
-.navCta,.primary{background:#0e9f45;color:#fff;padding:14px 22px;border-radius:10px;font-weight:800;display:inline-flex;gap:9px;align-items:center}
-.secondaryDark{border:1px solid rgba(255,255,255,.45);color:#fff;padding:14px 22px;border-radius:10px;font-weight:800;display:inline-flex;align-items:center}
+.navCta,.primary{background:#0e9f45;color:#fff;padding:14px 22px;border-radius:10px;font-weight:800;display:inline-flex;gap:9px;align-items:center;justify-content:center}
+.secondaryDark{border:1px solid rgba(255,255,255,.45);color:#fff;padding:14px 22px;border-radius:10px;font-weight:800;display:inline-flex;align-items:center;justify-content:center}
 
 .hero{min-height:620px;position:relative;background:linear-gradient(90deg,#050505 0%,#111 58%,#2a2a2a 100%);display:flex;align-items:center}
 .heroContent{position:relative;z-index:2;max-width:760px;margin-left:6vw;color:white}
@@ -60,8 +60,6 @@ nav{display:flex;gap:28px;color:#333}
 .footer{text-align:center;padding:40px 24px;color:#777;font-size:14px;line-height:1.9}
 .footer svg{vertical-align:middle;margin-right:4px}
 
-.floating{position:fixed;right:24px;bottom:24px;background:#0e9f45;color:white;width:64px;height:64px;border-radius:50%;display:grid;place-items:center;box-shadow:0 18px 35px rgba(14,159,69,.35);z-index:30}
-
 @media(max-width:900px){
   nav{display:none}
   .nav{height:90px;padding:0 22px}
@@ -69,17 +67,23 @@ nav{display:flex;gap:28px;color:#333}
   .mark{border-radius:11px;padding:8px 11px}
   .navCta{padding:14px 20px;border-radius:10px;font-size:18px}
 
-  .hero{min-height:580px;background:linear-gradient(90deg,#050505 0%,#151515 70%,#333 100%)}
+  .hero{
+    min-height:auto;
+    padding:58px 0 76px;
+    background:linear-gradient(90deg,#050505 0%,#151515 70%,#333 100%);
+    align-items:flex-start;
+  }
   .heroContent{margin:0 28px;max-width:none}
-  .hero h1{font-size:42px;line-height:1.12;letter-spacing:-.8px}
-  .lead{font-size:19px;line-height:1.55}
-  .heroActions{margin-top:28px}
-  .primary,.secondaryDark{padding:14px 18px;font-size:17px}
+  .eyebrow{font-size:12px;line-height:1.55}
+  .hero h1{font-size:40px;line-height:1.12;letter-spacing:-.8px}
+  .lead{font-size:18px;line-height:1.55}
+  .heroActions{margin-top:30px;display:flex;flex-direction:column;gap:14px;align-items:stretch}
+  .primary,.secondaryDark{width:100%;padding:15px 18px;font-size:17px;text-align:center}
 
   .stats,.three,.four,.stockPoints{grid-template-columns:1fr}
-  .stats{margin:-36px auto 58px;padding:0 28px}
+  .stats{margin:0 auto 58px;padding:34px 28px 0}
   .stats div{padding:30px 36px}
-  .stats strong{font-size:40px}
+  .stats strong{font-size:38px}
 
   .section{padding:58px 28px 72px}
   .section h2,.about h2,.finalCta h2,.stockSection h2{font-size:32px;line-height:1.2}
@@ -102,6 +106,4 @@ nav{display:flex;gap:28px;color:#333}
   .finalCta{margin:0 24px 54px;padding:58px 28px;background:#101010}
   .finalCta h2{font-size:32px}
   .finalCta p{font-size:18px;line-height:1.55}
-
-  .floating{width:58px;height:58px;right:18px;bottom:18px}
 }
