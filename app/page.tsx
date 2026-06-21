@@ -37,12 +37,7 @@ export default function Home() {
           <a href="#hakkimizda">Hakkımızda</a>
         </nav>
 
-        <a
-          className="navCta"
-          href={whatsappUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a className="navCta" href={whatsappUrl} target="_blank">
           WhatsApp
         </a>
       </header>
@@ -58,21 +53,10 @@ export default function Home() {
           </p>
 
           <div className="heroActions">
-            <a
-              className="primary heroButton"
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a className="primary heroButton" href={whatsappUrl} target="_blank">
               <MessageCircle size={20} /> Aracımı Değerlendir
             </a>
-
-            <a
-              className="secondaryDark heroButton"
-              href={sahibindenUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a className="secondaryDark heroButton" href={sahibindenUrl} target="_blank">
               Satıştaki Araçlar
             </a>
           </div>
@@ -183,101 +167,74 @@ export default function Home() {
         </div>
 
         <div className="centerCta">
-          <a
-            className="primary"
-            href={whatsappUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a className="primary" href={whatsappUrl} target="_blank">
             <MessageCircle size={20} /> WhatsApp’tan Değerlendir
           </a>
         </div>
       </section>
 
-      <div className="darkFlow">
-        <section id="satis" className="stockSection">
-          <div className="stockInner">
-            <p className="eyebrow">Satıştaki araçlar</p>
-            <h2>Güncel stoklarımızı Sahibinden mağazamızda inceleyin.</h2>
-            <p>
-              Satıştaki araçlarımızı, güncel fiyatları ve ilan detaylarını Sahibinden
-              mağazamız üzerinden takip edebilirsiniz.
-            </p>
+      <section id="satis" className="stockSection">
+        <div>
+          <p className="eyebrow">Satıştaki araçlar</p>
+          <h2>Güncel stoklarımızı Sahibinden mağazamızda inceleyin.</h2>
+          <p>
+            Satıştaki araçlarımızı, güncel fiyatları ve ilan detaylarını Sahibinden
+            mağazamız üzerinden takip edebilirsiniz.
+          </p>
 
-            <div className="stockPoints">
-              <p><CheckCircle2 /> Premium ve orta üst segment seçilmiş araçlar</p>
-              <p><CheckCircle2 /> Ekspertiz bilgileri ve ilan detayları</p>
-              <p><CheckCircle2 /> Kredi, kredi kartı ve finansman seçenekleri</p>
-              <p><CheckCircle2 /> Uygun araçlarda takas değerlendirmesi</p>
-            </div>
-
-            <a
-              className="primary"
-              href={sahibindenUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Store size={20} /> Sahibinden Mağazamızı İncele
-            </a>
-          </div>
-        </section>
-
-        <section id="hakkimizda" className="about">
-          <div>
-            <p className="eyebrow">Detacars hakkında</p>
-            <h2>Güveni, şeffaflığı ve doğru fiyatlamayı merkeze alıyoruz.</h2>
-
-            <div className="aboutGrid">
-              <p>
-                Detacars markası 2023 yılında faaliyetlerine başlamış, 2024 yılında
-                Detacars Otomotiv çatısı altında kurumsal yapısını güçlendirmiştir.
-              </p>
-              <p>
-                Premium ve orta üst segment araçlara odaklanan ekibimiz, toplamda 20 yılı
-                aşan sektör tecrübesi ve yıllık 200’ün üzerinde araç operasyonuyla
-                müşterilerine güvenilir çözümler sunmaktadır.
-              </p>
-              <p>
-                Alım ve satış süreçlerinde fiyatlarımızı piyasa emsalleri üzerinden açık
-                şekilde değerlendirir; müşterilerimize sürprizsiz ve net bir ticaret
-                deneyimi sunmayı hedefleriz.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section className="finalCta">
-          <div>
-            <h2>Alırken de satarken de netlik.</h2>
-            <p>
-              Şeffaf değerlendirme ve güvenilir ticaret için Detacars ile iletişime geçin.
-            </p>
+          <div className="stockPoints">
+            <p><CheckCircle2 /> Premium ve orta üst segment seçilmiş araçlar</p>
+            <p><CheckCircle2 /> Ekspertiz bilgileri ve ilan detayları</p>
+            <p><CheckCircle2 /> Kredi, kredi kartı ve finansman seçenekleri</p>
+            <p><CheckCircle2 /> Uygun araçlarda takas değerlendirmesi</p>
           </div>
 
-          <a
-            className="primary"
-            href={whatsappUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <MessageCircle size={20} /> WhatsApp’tan Yaz
+          <a className="primary" href={sahibindenUrl} target="_blank">
+            <Store size={20} /> Sahibinden Mağazamızı İncele
           </a>
-        </section>
-      </div>
+        </div>
+      </section>
+
+      <section id="hakkimizda" className="about">
+        <div>
+          <p className="eyebrow">Detacars hakkında</p>
+          <h2>Güveni, şeffaflığı ve doğru fiyatlamayı merkeze alıyoruz.</h2>
+          <p>
+            Detacars markası 2023 yılında faaliyetlerine başlamış, 2024 yılında
+            Detacars Otomotiv çatısı altında kurumsal yapısını güçlendirmiştir.
+          </p>
+          <p>
+            Premium ve orta üst segment araçlara odaklanan ekibimiz, toplamda 20 yılı
+            aşan sektör tecrübesi ve yıllık 200’ün üzerinde araç operasyonuyla
+            müşterilerine güvenilir çözümler sunmaktadır.
+          </p>
+          <p>
+            Alım ve satış süreçlerinde fiyatlarımızı piyasa emsalleri üzerinden açık
+            şekilde değerlendirir; müşterilerimize sürprizsiz ve net bir ticaret deneyimi
+            sunmayı hedefleriz.
+          </p>
+        </div>
+      </section>
+
+      <section className="finalCta">
+        <h2>Alırken de satarken de netlik.</h2>
+        <p>Şeffaf değerlendirme ve güvenilir ticaret için Detacars ile iletişime geçin.</p>
+
+        <a className="primary" href={whatsappUrl} target="_blank">
+          <MessageCircle size={20} /> WhatsApp’tan Yaz
+        </a>
+      </section>
 
       <footer className="footer">
-        <div className="footerBrand">
-          <span className="mark small">D</span>
-          <strong>DETACARS</strong>
-        </div>
-
-        <div className="footerInfo">
-          <span><Phone size={14} /> 0224 211 65 56</span>
-          <span><Mail size={14} /> info@detacars.com.tr</span>
-          <span><MapPin size={14} /> Bursa</span>
-        </div>
-
-        <small>© 2026 Detacars Otomotiv</small>
+        <strong>DETACARS OTOMOTİV</strong>
+        <br />
+        <Phone size={14} /> 0224 211 65 56
+        <br />
+        <Mail size={14} /> info@detacars.com.tr
+        <br />
+        <MapPin size={14} /> Bursa
+        <br />
+        © 2026 Detacars Otomotiv
       </footer>
     </main>
   );
