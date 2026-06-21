@@ -35,7 +35,6 @@ export default function Home() {
           <a href="#arac-alim">Araç Alım</a>
           <a href="#satis">Satıştaki Araçlar</a>
           <a href="#hakkimizda">Hakkımızda</a>
-          <a href="#iletisim">İletişim</a>
         </nav>
 
         <a className="navCta" href={whatsappUrl} target="_blank">
@@ -130,7 +129,7 @@ export default function Home() {
       <section id="arac-alim" className="section muted">
         <div className="sectionHead">
           <p className="eyebrow dark">Araç alım</p>
-          <h2>Aracınızı gerçek piyasa verileriyle değerlendirelim</h2>
+          <h2>Aracınızı şeffaf şekilde değerlendirelim</h2>
           <p>
             Araç değerlemesinde amacımız yalnızca teklif vermek değil, fiyatın nasıl
             oluştuğunu da açıkça paylaşmaktır. Böylece sürecin her adımında neye göre
@@ -217,53 +216,17 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="iletisim" className="contactSection">
-        <div className="sectionHead">
-          <p className="eyebrow dark">İletişim</p>
-          <h2>Detacars ile iletişime geçin</h2>
-          <p>
-            Araç alım, satış, takas veya güncel stoklarımız hakkında bilgi almak için
-            bizimle iletişime geçebilirsiniz.
-          </p>
-        </div>
+      <section className="finalCta">
+        <h2>Alırken de satarken de netlik.</h2>
+        <p>Şeffaf değerlendirme ve güvenilir ticaret için Detacars ile iletişime geçin.</p>
 
-        <div className="contactGrid">
-          <a href="tel:+905383642991">
-            <Phone />
-            <strong>0538 364 29 91</strong>
-            <span>Mobil</span>
-          </a>
-
-          <a href="tel:+902242116556">
-            <Phone />
-            <strong>0224 211 65 56</strong>
-            <span>Sabit hat</span>
-          </a>
-
-          <a href="mailto:info@detacars.com.tr">
-            <Mail />
-            <strong>info@detacars.com.tr</strong>
-            <span>E-posta</span>
-          </a>
-
-          <div>
-            <MapPin />
-            <strong>Bursa</strong>
-            <span>Konum bilgisi için iletişime geçin</span>
-          </div>
-        </div>
-
-        <div className="centerCta">
-          <a className="primary" href={whatsappUrl} target="_blank">
-            <MessageCircle size={20} /> WhatsApp’tan Yaz
-          </a>
-        </div>
+        <a className="primary" href={whatsappUrl} target="_blank">
+          <MessageCircle size={20} /> WhatsApp’tan Yaz
+        </a>
       </section>
 
       <footer className="footer">
         <strong>DETACARS OTOMOTİV</strong>
-        <br />
-        <Phone size={14} /> 0538 364 29 91
         <br />
         <Phone size={14} /> 0224 211 65 56
         <br />
