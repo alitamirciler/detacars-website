@@ -9,7 +9,12 @@ import {
   FileCheck,
   Phone,
   Mail,
-  MapPin
+  MapPin,
+  RefreshCw,
+  Store,
+  Handshake,
+  SearchCheck,
+  BadgeCheck
 } from 'lucide-react';
 
 const phone = '905383642991';
@@ -18,6 +23,8 @@ const whatsappText =
   'Merhaba, aracım için ön değerlendirme almak istiyorum. Marka/model, km ve hasar bilgilerini paylaşacağım.';
 
 const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(whatsappText)}`;
+
+const sahibindenUrl = 'https://shbd.io/s/4ck0aZs2';
 
 export default function Home() {
   return (
@@ -29,8 +36,9 @@ export default function Home() {
         </div>
 
         <nav>
-          <a href="#surec">Süreç</a>
-          <a href="#neden">Neden Detacars?</a>
+          <a href="#arac-alim">Araç Alım</a>
+          <a href="#satis">Satıştaki Araçlar</a>
+          <a href="#hakkimizda">Hakkımızda</a>
           <a href="#iletisim">İletişim</a>
         </nav>
 
@@ -41,16 +49,20 @@ export default function Home() {
 
       <section className="hero">
         <div className="heroContent">
-          <p className="eyebrow">Bursa merkezli hızlı araç alım sistemi</p>
-          <h1>Net fiyat. Hızlı karar. Sorunsuz satış.</h1>
+          <p className="eyebrow">Premium ve orta üst segment araçlarda</p>
+          <h1>Şeffaf değerlendirme. Güvenilir ticaret.</h1>
           <p className="lead">
-            Premium ve orta üst segment araçlarda Bursa merkezli hızlı alım süreci.
-            Aracınızı ilan ve pazarlık süreciyle uğraşmadan güvenli şekilde değerlendirelim.
+            Detacars, premium ve orta üst segment araçlarda uzmanlaşmış güven odaklı
+            ikinci el otomotiv firmasıdır. Alım, satış ve takas süreçlerinde piyasa
+            verilerine dayalı açık bir yaklaşım sunar.
           </p>
 
           <div className="heroActions">
             <a className="primary" href={whatsappUrl} target="_blank">
-              <MessageCircle size={20} /> WhatsApp’tan Teklif Al
+              <MessageCircle size={20} /> Aracımı Değerlendir
+            </a>
+            <a className="secondaryDark" href={sahibindenUrl} target="_blank">
+              Satıştaki Araçlar
             </a>
           </div>
         </div>
@@ -58,84 +70,160 @@ export default function Home() {
 
       <section className="stats">
         <div>
-          <strong>650+</strong>
-          <span>Tamamlanan araç işlemi</span>
+          <strong>20+ yıl</strong>
+          <span>Toplam sektör tecrübesi</span>
         </div>
         <div>
-          <strong>20+</strong>
-          <span>Aynı anda stok kapasitesi</span>
+          <strong>200+</strong>
+          <span>Yıllık araç operasyonu</span>
         </div>
         <div>
-          <strong>%100</strong>
-          <span>Noter ve ödeme güvenliği</span>
+          <strong>Aynı gün</strong>
+          <span>Değerlendirme ve işlem süreci</span>
         </div>
       </section>
 
-      <section id="surec" className="section">
+      <section id="neden" className="section">
         <div className="sectionHead">
-          <p className="eyebrow dark">Süreç</p>
-          <h2>Aracınızı satma süreci nasıl ilerliyor?</h2>
+          <p className="eyebrow dark">Neden Detacars?</p>
+          <h2>Sürprizsiz, açık ve güvenilir bir süreç</h2>
+          <p>
+            İkinci el araç ticaretinde güvenin, fiyatın nasıl oluştuğunu açıkça
+            anlatmaktan geçtiğine inanıyoruz.
+          </p>
+        </div>
+
+        <div className="cards four">
+          <article>
+            <SearchCheck />
+            <h3>Şeffaf değerlendirme</h3>
+            <p>
+              Araç alım ve satış süreçlerinde fiyatlarımızı piyasa emsalleri üzerinden
+              açık şekilde değerlendiririz.
+            </p>
+          </article>
+
+          <article>
+            <BadgeCheck />
+            <h3>Teklifimizin arkasındayız</h3>
+            <p>
+              Ön değerlendirmede paylaştığımız fiyat, aracın beyan edilen durumu ile
+              uyumlu olduğu sürece değişmez.
+            </p>
+          </article>
+
+          <article>
+            <Car />
+            <h3>Segment uzmanlığı</h3>
+            <p>
+              Premium ve orta üst segment araçların piyasa dinamiklerine ve değerleme
+              kriterlerine hakimiz.
+            </p>
+          </article>
+
+          <article>
+            <ShieldCheck />
+            <h3>Güvenli işlem</h3>
+            <p>
+              Ekspertiz, noter ve ödeme süreçlerinde net, hızlı ve güven odaklı ilerleriz.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="arac-alim" className="section muted">
+        <div className="sectionHead">
+          <p className="eyebrow dark">Araç alım</p>
+          <h2>Aracınızı gerçek piyasa verileriyle değerlendirelim</h2>
+          <p>
+            Araç değerlemesinde amacımız yalnızca teklif vermek değil, fiyatın nasıl
+            oluştuğunu da açıkça paylaşmaktır. Böylece sürecin her adımında neye göre
+            karar verdiğimizi bilirsiniz.
+          </p>
         </div>
 
         <div className="cards three">
           <article>
-            <Car />
+            <MessageCircle />
             <h3>1. Bilgileri paylaşın</h3>
-            <p>Marka, model, kilometre, hasar ve paket bilgilerini WhatsApp üzerinden gönderin.</p>
+            <p>
+              Marka, model, kilometre, paket, hasar ve ekspertiz bilgilerini WhatsApp
+              üzerinden gönderin.
+            </p>
           </article>
 
           <article>
             <Banknote />
             <h3>2. Ön değerlendirme alın</h3>
-            <p>Piyasa koşullarına göre hızlı ve gerçekçi ön fiyat aralığı paylaşalım.</p>
+            <p>
+              Piyasa emsalleri ve aracın durumuna göre gerçekçi bir ön fiyat aralığı
+              paylaşalım.
+            </p>
           </article>
 
           <article>
             <FileCheck />
-            <h3>3. Ekspertiz ve noter</h3>
-            <p>Uygun araçlarda ekspertiz, noter ve ödeme sürecini hızlıca tamamlayalım.</p>
+            <h3>3. Ekspertiz, noter ve ödeme</h3>
+            <p>
+              Araç beyan edilen durumla uyumluysa ekspertiz sonrası noter ve ödeme
+              sürecini tamamlayalım.
+            </p>
           </article>
         </div>
+
+        <div className="centerCta">
+          <a className="primary" href={whatsappUrl} target="_blank">
+            <MessageCircle size={20} /> WhatsApp’tan Değerlendir
+          </a>
+        </div>
       </section>
 
-      <section id="neden" className="split">
+      <section id="satis" className="stockSection">
         <div>
-          <p className="eyebrow dark">Netlik</p>
-          <h2>Araç alırken ne vaat etmiyoruz?</h2>
+          <p className="eyebrow">Satıştaki araçlar</p>
+          <h2>Güncel stoklarımızı Sahibinden mağazamızda inceleyin.</h2>
+          <p>
+            Satıştaki araçlarımızı, güncel fiyatları ve ilan detaylarını Sahibinden
+            mağazamız üzerinden takip edebilirsiniz.
+          </p>
 
-          <div className="list negative">
-            <p><XCircle /> Piyasanın üzerinde gerçek dışı teklif</p>
-            <p><XCircle /> Başta farklı, ekspertizde farklı fiyat</p>
-            <p><XCircle /> Günler süren belirsiz süreçler</p>
+          <div className="stockPoints">
+            <p><CheckCircle2 /> Premium ve orta üst segment seçilmiş araçlar</p>
+            <p><CheckCircle2 /> Ekspertiz bilgileri ve ilan detayları</p>
+            <p><CheckCircle2 /> Kredi, kredi kartı ve finansman seçenekleri</p>
+            <p><CheckCircle2 /> Uygun araçlarda takas değerlendirmesi</p>
           </div>
-        </div>
 
-        <div className="glass">
-          <h2>Bunun yerine ne sunuyoruz?</h2>
-
-          <div className="list positive">
-            <p><CheckCircle2 /> Net ve gerçekçi fiyat yaklaşımı</p>
-            <p><Clock3 /> Hızlı karar ve aynı gün işlem</p>
-            <p><ShieldCheck /> Sorunsuz noter ve ödeme süreci</p>
-          </div>
+          <a className="primary" href={sahibindenUrl} target="_blank">
+            <Store size={20} /> Sahibinden Mağazamızı İncele
+          </a>
         </div>
       </section>
 
-      <section className="about">
+      <section id="hakkimizda" className="about">
         <div>
           <p className="eyebrow">Detacars hakkında</p>
-          <h2>İşimiz yalnızca araç almak değil, süreci sorunsuz kapatmaktır.</h2>
+          <h2>Güveni, şeffaflığı ve doğru fiyatlamayı merkeze alıyoruz.</h2>
           <p>
-            Detacars olarak bugüne kadar 650&apos;den fazla araç işlemini tamamladık.
-            Özellikle premium ve orta üst segment araçlarda hızlı karar verebilen,
-            ödeme gücü olan ve süreci uzatmayan bir alım yapısı oluşturduk.
+            Detacars markası 2023 yılında faaliyetlerine başlamış, 2024 yılında
+            Detacars Otomotiv çatısı altında kurumsal yapısını güçlendirmiştir.
+          </p>
+          <p>
+            Premium ve orta üst segment araçlara odaklanan ekibimiz, toplamda 20 yılı
+            aşan sektör tecrübesi ve yıllık 200’ün üzerinde araç operasyonuyla
+            müşterilerine güvenilir çözümler sunmaktadır.
+          </p>
+          <p>
+            Alım ve satış süreçlerinde fiyatlarımızı piyasa emsalleri üzerinden açık
+            şekilde değerlendirir; müşterilerimize sürprizsiz ve net bir ticaret deneyimi
+            sunmayı hedefleriz.
           </p>
         </div>
       </section>
 
       <section id="iletisim" className="formSection">
         <div className="sectionHead">
-          <p className="eyebrow dark">Ön değerlendirme</p>
+          <p className="eyebrow dark">İletişim</p>
           <h2>Aracınızı değerlendirelim</h2>
           <p>
             Marka, model, kilometre ve hasar bilgisini WhatsApp üzerinden gönderin.
@@ -151,8 +239,8 @@ export default function Home() {
       </section>
 
       <section className="finalCta">
-        <h2>Aracınızı satmak için beklemeyin.</h2>
-        <p>Hızlı, net ve sorunsuz satış için Detacars ile iletişime geçin.</p>
+        <h2>Alırken de satarken de netlik.</h2>
+        <p>Şeffaf değerlendirme ve güvenilir ticaret için Detacars ile iletişime geçin.</p>
 
         <a className="primary" href={whatsappUrl} target="_blank">
           <MessageCircle size={20} /> WhatsApp’tan Yaz
@@ -160,18 +248,18 @@ export default function Home() {
       </section>
 
       <footer className="footer">
-  <strong>DETACARS OTOMOTİV</strong>
-  <br />
-  <Phone size={14} /> 0538 364 29 91
-  <br />
-  <Phone size={14} /> 0224 211 65 56
-  <br />
-  <Mail size={14} /> info@detacars.com.tr
-  <br />
-  <MapPin size={14} /> Bursa Yeni Oto Merkezi
-  <br />
-  © 2026 Detacars Otomotiv
-</footer>
+        <strong>DETACARS OTOMOTİV</strong>
+        <br />
+        <Phone size={14} /> 0538 364 29 91
+        <br />
+        <Phone size={14} /> 0224 211 65 56
+        <br />
+        <Mail size={14} /> info@detacars.com.tr
+        <br />
+        <MapPin size={14} /> Bursa
+        <br />
+        © 2026 Detacars Otomotiv
+      </footer>
 
       <a className="floating" href={whatsappUrl} target="_blank">
         <MessageCircle size={28} />

@@ -6,45 +6,50 @@ a{text-decoration:none;color:inherit}
 .nav{height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 6vw;background:#fff;position:sticky;top:0;z-index:20;border-bottom:1px solid #eee}
 .brand{display:flex;gap:12px;align-items:center;font-weight:900;font-size:24px}
 .mark{background:#0e8f3d;color:#fff;border-radius:12px;padding:8px 11px}
-nav{display:flex;gap:34px;color:#333}
+nav{display:flex;gap:28px;color:#333}
 
 .navCta,.primary{background:#0e9f45;color:#fff;padding:14px 22px;border-radius:10px;font-weight:800;display:inline-flex;gap:9px;align-items:center}
+.secondaryDark{border:1px solid rgba(255,255,255,.45);color:#fff;padding:14px 22px;border-radius:10px;font-weight:800;display:inline-flex;align-items:center}
 
 .hero{min-height:620px;position:relative;background:linear-gradient(90deg,#050505 0%,#111 58%,#2a2a2a 100%);display:flex;align-items:center}
-.heroContent{position:relative;z-index:2;max-width:720px;margin-left:6vw;color:white}
+.heroContent{position:relative;z-index:2;max-width:760px;margin-left:6vw;color:white}
 .eyebrow{text-transform:uppercase;letter-spacing:.14em;color:#2bd46f;font-size:13px;font-weight:900}
 .eyebrow.dark{color:#0e8f3d}
 .hero h1{font-size:56px;line-height:1.05;margin:14px 0 22px;letter-spacing:-1.4px}
-.lead{font-size:20px;line-height:1.65;color:#e8e8e8;max-width:620px}
-.heroActions{display:flex;gap:18px;margin-top:32px}
+.lead{font-size:20px;line-height:1.65;color:#e8e8e8;max-width:680px}
+.heroActions{display:flex;gap:16px;margin-top:32px;flex-wrap:wrap}
 
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:-50px auto 72px;max-width:1120px;position:relative;z-index:5;padding:0 24px}
 .stats div{background:#fff;border:1px solid #eee;box-shadow:0 18px 50px rgba(0,0,0,.08);border-radius:18px;padding:30px}
 .stats strong{font-size:40px;display:block}
 .stats span{color:#555}
 
-.section{padding:38px 6vw 84px}
-.sectionHead{text-align:center;max-width:740px;margin:0 auto 44px}
-.section h2,.split h2,.about h2,.finalCta h2{font-size:38px;line-height:1.18;letter-spacing:-.8px}
+.section{padding:76px 6vw 86px}
+.section.muted{background:#f6f7f6}
+.sectionHead{text-align:center;max-width:780px;margin:0 auto 44px}
+.sectionHead p{color:#555;line-height:1.7;font-size:18px}
+.section h2,.split h2,.about h2,.finalCta h2,.stockSection h2{font-size:38px;line-height:1.18;letter-spacing:-.8px}
 
 .cards{display:grid;gap:24px;max-width:1120px;margin:auto}
 .three{grid-template-columns:repeat(3,1fr)}
-.cards article{border:1px solid #eee;border-radius:22px;padding:32px;background:#fff;box-shadow:0 10px 35px rgba(0,0,0,.05)}
-.cards svg{color:#0e8f3d;width:40px;height:40px}
+.four{grid-template-columns:repeat(4,1fr)}
+.cards article{border:1px solid #eee;border-radius:22px;padding:30px;background:#fff;box-shadow:0 10px 35px rgba(0,0,0,.05)}
+.cards svg{color:#0e8f3d;width:38px;height:38px}
 .cards h3{font-size:21px}
-.cards p,.split p,.about p,.note{color:#555;line-height:1.7}
+.cards p,.note{color:#555;line-height:1.7}
 
-.split{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding:84px 6vw;background:#f6f7f6}
-.glass{background:#0c1110;color:#fff;border-radius:28px;padding:40px}
-.glass h2{color:#fff}
-.glass p{color:#e8e8e8}
-.list p{display:flex;gap:12px;align-items:flex-start;font-weight:700}
-.positive svg{color:#22c55e;min-width:24px}
-.negative svg{color:#777;min-width:24px}
+.centerCta{text-align:center;margin-top:36px}
+
+.stockSection{padding:92px 6vw;background:#0c1110;color:#fff}
+.stockSection>div{max-width:850px}
+.stockSection p{font-size:18px;line-height:1.65;color:#e8e8e8}
+.stockPoints{display:grid;grid-template-columns:1fr 1fr;gap:10px 24px;margin:26px 0 34px}
+.stockPoints p{display:flex;gap:10px;align-items:flex-start;margin:0;font-weight:700}
+.stockPoints svg{min-width:22px;color:#22c55e}
 
 .about{padding:96px 6vw;background:linear-gradient(90deg,#050505 0%,#111 60%,#2a2a2a 100%);color:#fff}
-.about div{max-width:760px}
-.about p{font-size:18px;color:#f1f1f1}
+.about div{max-width:820px}
+.about p{font-size:18px;color:#f1f1f1;line-height:1.75}
 
 .formSection{padding:82px 6vw}
 .formSection .sectionHead p{font-size:18px;line-height:1.55;color:#333}
@@ -64,35 +69,35 @@ nav{display:flex;gap:34px;color:#333}
   .mark{border-radius:11px;padding:8px 11px}
   .navCta{padding:14px 20px;border-radius:10px;font-size:18px}
 
-  .hero{min-height:560px;background:linear-gradient(90deg,#050505 0%,#151515 70%,#333 100%)}
+  .hero{min-height:580px;background:linear-gradient(90deg,#050505 0%,#151515 70%,#333 100%)}
   .heroContent{margin:0 28px;max-width:none}
   .hero h1{font-size:42px;line-height:1.12;letter-spacing:-.8px}
   .lead{font-size:19px;line-height:1.55}
   .heroActions{margin-top:28px}
-  .primary{padding:14px 18px;font-size:17px}
+  .primary,.secondaryDark{padding:14px 18px;font-size:17px}
 
-  .stats,.three,.split{grid-template-columns:1fr}
+  .stats,.three,.four,.stockPoints{grid-template-columns:1fr}
   .stats{margin:-36px auto 58px;padding:0 28px}
-  .stats div{padding:30px 40px}
-  .stats strong{font-size:42px}
+  .stats div{padding:30px 36px}
+  .stats strong{font-size:40px}
 
-  .section{padding:34px 28px 72px}
-  .section h2,.split h2,.about h2,.finalCta h2{font-size:32px;line-height:1.2}
+  .section{padding:58px 28px 72px}
+  .section h2,.about h2,.finalCta h2,.stockSection h2{font-size:32px;line-height:1.2}
   .sectionHead{margin-bottom:38px}
+  .sectionHead p{font-size:18px}
 
-  .cards article{padding:36px 42px}
-  .cards h3{font-size:26px}
-  .cards p{font-size:20px}
+  .cards article{padding:34px 34px}
+  .cards h3{font-size:24px}
+  .cards p{font-size:19px}
 
-  .split{padding:54px 28px 72px}
-  .glass{padding:36px 34px}
-  .list p{font-size:18px;line-height:1.45}
+  .stockSection{padding:72px 28px}
+  .stockSection p{font-size:18px}
 
   .about{padding:72px 28px;background:#101010}
-  .about p{font-size:21px;line-height:1.65}
+  .about p{font-size:19px;line-height:1.65}
 
   .formSection{padding:70px 28px}
-  .formSection .sectionHead p{font-size:19px}
+  .formSection .sectionHead p{font-size:18px}
 
   .finalCta{margin:0 24px 54px;padding:58px 28px;background:#101010}
   .finalCta h2{font-size:32px}
