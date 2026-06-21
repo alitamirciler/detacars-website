@@ -24,7 +24,7 @@ const whatsappText =
 
 const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(whatsappText)}`;
 
-const sahibindenUrl = 'https://shbd.io/s/4ck0aZs2';
+const sahibindenUrl = 'https://detacars.sahibinden.com/';
 
 export default function Home() {
   return (
