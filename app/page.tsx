@@ -10,8 +10,7 @@ import {
   MapPin,
   Store,
   SearchCheck,
-  BadgeCheck,
-  Star
+  BadgeCheck
 } from 'lucide-react';
 
 const phone = '905383642991';
@@ -24,8 +23,35 @@ const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(whatsappTe
 const sahibindenUrl = 'https://detacars.sahibinden.com/';
 
 export default function Home() {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'AutoDealer',
+    name: 'Detacars Otomotiv Sanayi ve Ticaret Limited Şirketi',
+    url: 'https://detacars.com.tr',
+    telephone: '+90 224 211 65 56',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Bursa',
+      addressCountry: 'TR',
+    },
+    areaServed: {
+      '@type': 'Country',
+      name: 'Turkey',
+    },
+    description:
+      'Premium ve orta üst segment araçlarda şeffaf değerlendirme, güvenilir araç alım, satım ve takas hizmetleri.',
+    sameAs: ['https://detacars.sahibinden.com/'],
+  };
+
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schema),
+        }}
+      />
+
       <header className="nav">
         <div className="brand">
           <span className="mark">D</span>
