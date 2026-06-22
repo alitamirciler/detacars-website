@@ -60,8 +60,9 @@ export default function Home() {
 
         <nav>
           <a href="#arac-alim">Araç Alım</a>
-          <a href="#satis">Satıştaki Araçlar</a>
-          <a href="#hakkimizda">Hakkımızda</a>
+  	<a href="#satis">Satıştaki Araçlar</a>
+  	<a href="/rehberler">Rehberler</a>
+  	<a href="#hakkimizda">Hakkımızda</a>
         </nav>
 
         <a className="navCta" href={whatsappUrl} target="_blank">
