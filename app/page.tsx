@@ -197,52 +197,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="reviewSection">
-        <div className="sectionHead">
-          <p className="eyebrow dark">Müşteri güveni</p>
-          <h2>Google’da 10+ müşteri yorumu</h2>
-          <p>
-            Detacars olarak müşterilerimizden aldığımız geri bildirimleri önemsiyor,
-            güvene dayalı uzun vadeli ticaret ilişkileri kurmayı hedefliyoruz.
-          </p>
-        </div>
-
-        <div className="reviewCards">
-          <article>
-            <div className="stars">
-              <Star /><Star /><Star /><Star /><Star />
-            </div>
-            <h3>Açık ve net süreç</h3>
-            <p>
-              Müşterilerimiz, fiyatlama ve değerlendirme sürecindeki açıklığı en önemli
-              güven unsurlarından biri olarak görüyor.
-            </p>
-          </article>
-
-          <article>
-            <div className="stars">
-              <Star /><Star /><Star /><Star /><Star />
-            </div>
-            <h3>Sözünün arkasında duran yaklaşım</h3>
-            <p>
-              Araç beyan edilen durumla uyumlu olduğunda, ön değerlendirme sonrası
-              sürpriz fiyat değişikliği yapmadan ilerlemeye önem veriyoruz.
-            </p>
-          </article>
-
-          <article>
-            <div className="stars">
-              <Star /><Star /><Star /><Star /><Star />
-            </div>
-            <h3>Güvenli işlem akışı</h3>
-            <p>
-              Ekspertiz, noter ve ödeme sürecini mümkün olduğunca hızlı, net ve
-              kontrollü şekilde tamamlamayı hedefliyoruz.
-            </p>
-          </article>
-        </div>
-      </section>
-
       <section id="hakkimizda" className="about">
         <div>
           <p className="eyebrow">Detacars hakkında</p>
@@ -256,6 +210,9 @@ export default function Home() {
             aşan sektör tecrübesi ve yıllık 200’ün üzerinde araç operasyonuyla
             müşterilerine güvenilir çözümler sunmaktadır.
           </p>
+<div className="googleBadge">
+ ⭐ Google'da 10+ müşteri değerlendirmesi
+</div>
           <p>
             Alım ve satış süreçlerinde fiyatlarımızı piyasa emsalleri üzerinden açık
             şekilde değerlendirir; müşterilerimize sürprizsiz ve net bir ticaret deneyimi
