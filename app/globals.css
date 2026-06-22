@@ -242,13 +242,6 @@ nav{display:flex;gap:28px;color:#333}
   text-align:center;
 }
 
-.guideCta svg{
-  width:42px;
-  height:42px;
-  color:#22c55e;
-  margin-bottom:18px;
-}
-
 .guideCta h2{
   font-size:36px;
   margin:0 0 14px;

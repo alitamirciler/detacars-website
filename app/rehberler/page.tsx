@@ -1,7 +1,6 @@
 import {
   ArrowRight,
   Calculator,
-  Car,
   FileSearch,
   Handshake,
   ShieldCheck,
@@ -90,7 +89,6 @@ export default function RehberlerPage() {
       </section>
 
       <section className="guideCta">
-        <Car />
         <h2>Aracınız için ön değerlendirme almak ister misiniz?</h2>
         <p>
           Marka, model, kilometre ve hasar bilgilerini WhatsApp üzerinden
