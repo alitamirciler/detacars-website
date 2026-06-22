@@ -210,9 +210,6 @@ export default function Home() {
             aşan sektör tecrübesi ve yıllık 200’ün üzerinde araç operasyonuyla
             müşterilerine güvenilir çözümler sunmaktadır.
           </p>
-<div className="googleBadge">
- ⭐ Google'da 10+ müşteri değerlendirmesi
-</div>
           <p>
             Alım ve satış süreçlerinde fiyatlarımızı piyasa emsalleri üzerinden açık
             şekilde değerlendirir; müşterilerimize sürprizsiz ve net bir ticaret deneyimi
