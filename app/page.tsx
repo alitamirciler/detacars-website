@@ -10,7 +10,8 @@ import {
   MapPin,
   Store,
   SearchCheck,
-  BadgeCheck
+  BadgeCheck,
+  Star
 } from 'lucide-react';
 
 const phone = '905383642991';
@@ -80,8 +81,8 @@ export default function Home() {
 
       <section id="neden" className="section">
         <div className="sectionHead">
-          <p className="eyebrow dark">Neden Detacars?</p>
-          <h2>Sürprizsiz, açık ve güvenilir bir süreç</h2>
+          <p className="eyebrow dark">Neden Detacars farklı?</p>
+          <h2>Nasıl çalıştığımızı açıkça anlatırız</h2>
           <p>
             İkinci el araç ticaretinde güvenin, fiyatın nasıl oluştuğunu açıkça
             anlatmaktan geçtiğine inanıyoruz.
@@ -91,28 +92,28 @@ export default function Home() {
         <div className="cards four">
           <article>
             <SearchCheck />
-            <h3>Şeffaf değerlendirme</h3>
+            <h3>Açık fiyatlama</h3>
             <p>
-              Araç alım ve satış süreçlerinde fiyatlarımızı piyasa emsalleri üzerinden
-              açık şekilde değerlendiririz.
+              Fiyat teklifimizi piyasa emsalleri üzerinden oluşturur, değerlendirme
+              mantığımızı müşterilerimizle paylaşırız.
             </p>
           </article>
 
           <article>
             <BadgeCheck />
-            <h3>Teklifimizin arkasındayız</h3>
+            <h3>Sürpriz kesinti yok</h3>
             <p>
-              Ön değerlendirmede paylaştığımız fiyat, aracın beyan edilen durumu ile
-              uyumlu olduğu sürece değişmez.
+              Araç beyan edilen durumla uyumluysa, ön değerlendirmede paylaştığımız
+              teklifin arkasında dururuz.
             </p>
           </article>
 
           <article>
             <Car />
-            <h3>Segment uzmanlığı</h3>
+            <h3>Segment bilgisi</h3>
             <p>
-              Premium ve orta üst segment araçların piyasa dinamiklerine ve değerleme
-              kriterlerine hakimiz.
+              Premium ve orta üst segment araçların piyasa dinamiklerine, alıcı
+              beklentilerine ve değerleme kriterlerine hakimiz.
             </p>
           </article>
 
@@ -120,7 +121,8 @@ export default function Home() {
             <ShieldCheck />
             <h3>Güvenli işlem</h3>
             <p>
-              Ekspertiz, noter ve ödeme süreçlerinde net, hızlı ve güven odaklı ilerleriz.
+              Ekspertiz, noter ve ödeme süreçlerinde net, hızlı ve güven odaklı
+              bir işlem akışı sunarız.
             </p>
           </article>
         </div>
@@ -195,6 +197,52 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="reviewSection">
+        <div className="sectionHead">
+          <p className="eyebrow dark">Müşteri güveni</p>
+          <h2>Google’da 10+ müşteri yorumu</h2>
+          <p>
+            Detacars olarak müşterilerimizden aldığımız geri bildirimleri önemsiyor,
+            güvene dayalı uzun vadeli ticaret ilişkileri kurmayı hedefliyoruz.
+          </p>
+        </div>
+
+        <div className="reviewCards">
+          <article>
+            <div className="stars">
+              <Star /><Star /><Star /><Star /><Star />
+            </div>
+            <h3>Açık ve net süreç</h3>
+            <p>
+              Müşterilerimiz, fiyatlama ve değerlendirme sürecindeki açıklığı en önemli
+              güven unsurlarından biri olarak görüyor.
+            </p>
+          </article>
+
+          <article>
+            <div className="stars">
+              <Star /><Star /><Star /><Star /><Star />
+            </div>
+            <h3>Sözünün arkasında duran yaklaşım</h3>
+            <p>
+              Araç beyan edilen durumla uyumlu olduğunda, ön değerlendirme sonrası
+              sürpriz fiyat değişikliği yapmadan ilerlemeye önem veriyoruz.
+            </p>
+          </article>
+
+          <article>
+            <div className="stars">
+              <Star /><Star /><Star /><Star /><Star />
+            </div>
+            <h3>Güvenli işlem akışı</h3>
+            <p>
+              Ekspertiz, noter ve ödeme sürecini mümkün olduğunca hızlı, net ve
+              kontrollü şekilde tamamlamayı hedefliyoruz.
+            </p>
+          </article>
+        </div>
+      </section>
+
       <section id="hakkimizda" className="about">
         <div>
           <p className="eyebrow">Detacars hakkında</p>
@@ -226,7 +274,9 @@ export default function Home() {
       </section>
 
       <footer className="footer">
-        <strong>DETACARS OTOMOTİV</strong>
+        <strong>DETACARS</strong>
+        <br />
+        Detacars Otomotiv Sanayi ve Ticaret Limited Şirketi
         <br />
         <Phone size={14} /> 0224 211 65 56
         <br />
@@ -234,7 +284,7 @@ export default function Home() {
         <br />
         <MapPin size={14} /> Bursa
         <br />
-        © 2026 Detacars Otomotiv
+        © 2026 Detacars
       </footer>
     </main>
   );
