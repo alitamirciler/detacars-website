@@ -18,7 +18,7 @@ const guides = [
     title: 'Ekspertiz Raporu Nasıl Okunur?',
     description:
       'Ekspertiz raporundaki boya, değişen, mekanik ve elektronik kontrollerin araç değerine etkisini sade şekilde açıklıyoruz.',
-    href: '#',
+    href: '/rehberler/ekspertiz-raporu-nasil-yorumlanir',
     icon: FileSearch,
   },
   {
