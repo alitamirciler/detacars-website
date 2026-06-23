@@ -119,12 +119,31 @@ nav{display:flex;gap:28px;color:#333}
 .footer svg{vertical-align:middle;margin-right:4px}
 
 @media(max-width:900px){
-  nav{display:none}
-  .nav{height:90px;padding:0 22px}
+
+  nav{
+    display:flex;
+    position:absolute;
+    left:0;
+    right:0;
+    top:90px;
+    overflow-x:auto;
+    gap:18px;
+    padding:12px 22px;
+    background:#fff;
+    border-bottom:1px solid #eee;
+    white-space:nowrap;
+    font-size:15px;
+  }
+
+  .nav{
+    height:90px;
+    padding:0 22px;
+    margin-bottom:48px;
+  }
+
   .brand{font-size:21px}
   .mark{border-radius:11px;padding:8px 11px}
   .navCta{padding:14px 20px;border-radius:10px;font-size:18px}
-
   .hero{
     min-height:auto;
     padding:58px 0 76px;

@@ -247,10 +247,12 @@ export default function ArticlePage() {
           textAlign: 'center',
         }}
       >
-        <h2>Ekspertiz raporunuzu birlikte değerlendirelim</h2>
-        <p style={{ color: '#555', lineHeight: '1.7' }}>
-          Aracınızın ekspertiz ve hasar bilgilerini paylaşın. Piyasa değeri üzerindeki etkisini birlikte yorumlayalım.
-        </p>
+        <h2>Aracınız için ön değerlendirme alın</h2>
+
+<p style={{ color: '#555', lineHeight: '1.7' }}>
+  Marka, model, kilometre, hasar ve ekspertiz bilgilerini paylaşın.
+  Aracınızın piyasa değerini ön değerlendirme kapsamında inceleyelim.
+</p>
         <a
           href={whatsappUrl}
           target="_blank"
