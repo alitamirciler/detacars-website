@@ -1,8 +1,3 @@
-Tamam. Bu dosya ana şablon. Diğer iki sayfada yalnızca metinler ve bağlantılar değişecek; HTML yapısı ve class adları birebir aynı kalacak.
-
-Şimdi `app/rehberler/arac-degerleme-nasil-yapilir/page.tsx` dosyasının tamamını bununla değiştir:
-
-```tsx
 import type { Metadata } from 'next';
 import { MessageCircle } from 'lucide-react';
 
@@ -314,4 +309,3 @@ export default function ArticlePage() {
     </main>
   );
 }
-```
