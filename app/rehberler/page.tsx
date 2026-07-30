@@ -32,7 +32,7 @@ const guides = [
     title: 'İkinci El Araç Satarken Nelere Dikkat Edilmeli?',
     description:
       'Aracınızı satarken doğru fiyatlama, güvenli ödeme, noter işlemleri ve pazarlık sürecinde dikkat edilmesi gereken noktalar.',
-    href: '#',
+    href: '/rehberler/ikinci-el-arac-satarken-nelere-dikkat-edilmeli',
     icon: ShieldCheck,
   },
 ];
