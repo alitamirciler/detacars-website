@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import {
   ArrowRight,
   Calculator,
@@ -13,6 +14,7 @@ const guides = [
       'İkinci el araçlarda fiyat belirlenirken kilometre, hasar, boya, değişen, donanım ve piyasa emsallerinin nasıl değerlendirildiğini anlatıyoruz.',
     href: '/rehberler/arac-degerleme-nasil-yapilir',
     icon: Calculator,
+    published: true,
   },
   {
     title: 'Ekspertiz Raporu Nasıl Okunur?',
@@ -20,13 +22,15 @@ const guides = [
       'Ekspertiz raporundaki boya, değişen, mekanik ve elektronik kontrollerin araç değerine etkisini sade şekilde açıklıyoruz.',
     href: '/rehberler/ekspertiz-raporu-nasil-yorumlanir',
     icon: FileSearch,
+    published: true,
   },
   {
     title: 'Takaslı Araç Satışı Nasıl Yapılır?',
     description:
       'Aracınızı takasa vermeden önce fiyat, fark ödemesi, ekspertiz ve noter sürecinde dikkat etmeniz gerekenleri özetliyoruz.',
-    href: '#',
+    href: '',
     icon: Handshake,
+    published: false,
   },
   {
     title: 'İkinci El Araç Satarken Nelere Dikkat Edilmeli?',
@@ -34,6 +38,7 @@ const guides = [
       'Aracınızı satarken doğru fiyatlama, güvenli ödeme, noter işlemleri ve pazarlık sürecinde dikkat edilmesi gereken noktalar.',
     href: '/rehberler/ikinci-el-arac-satarken-nelere-dikkat-edilmeli',
     icon: ShieldCheck,
+    published: true,
   },
 ];
 
@@ -41,22 +46,23 @@ export default function RehberlerPage() {
   return (
     <main>
       <header className="nav">
-        <a className="brand" href="/">
+        <Link className="brand" href="/">
           <span className="mark">D</span>
           <span>DETACARS</span>
-        </a>
+        </Link>
 
         <nav>
-          <a href="/#arac-alim">Araç Alım</a>
-          <a href="/#satis">Satıştaki Araçlar</a>
-          <a href="/rehberler">Rehberler</a>
-          <a href="/#hakkimizda">Hakkımızda</a>
+          <Link href="/#arac-alim">Araç Alım</Link>
+          <Link href="/#satis">Satıştaki Araçlar</Link>
+          <Link href="/rehberler">Rehberler</Link>
+          <Link href="/#hakkimizda">Hakkımızda</Link>
         </nav>
 
         <a
           className="navCta"
           href="https://wa.me/905383642991?text=Merhaba%2C%20arac%C4%B1m%20i%C3%A7in%20%C3%B6n%20de%C4%9Ferlendirme%20almak%20istiyorum."
           target="_blank"
+          rel="noopener noreferrer"
         >
           WhatsApp
         </a>
@@ -75,15 +81,30 @@ export default function RehberlerPage() {
         {guides.map((guide) => {
           const Icon = guide.icon;
 
+          if (!guide.published) {
+            return (
+              <div className="guideCard" key={guide.title}>
+                <Icon />
+                <h2>{guide.title}</h2>
+                <p>{guide.description}</p>
+                <span>Yakında</span>
+              </div>
+            );
+          }
+
           return (
-            <a className="guideCard" href={guide.href} key={guide.title}>
+            <Link
+              className="guideCard"
+              href={guide.href}
+              key={guide.title}
+            >
               <Icon />
               <h2>{guide.title}</h2>
               <p>{guide.description}</p>
               <span>
                 Rehberi oku <ArrowRight size={18} />
               </span>
-            </a>
+            </Link>
           );
         })}
       </section>
@@ -94,10 +115,12 @@ export default function RehberlerPage() {
           Marka, model, kilometre ve hasar bilgilerini WhatsApp üzerinden
           gönderin. Aracınızı piyasa verileri doğrultusunda değerlendirelim.
         </p>
+
         <a
           className="primary"
           href="https://wa.me/905383642991?text=Merhaba%2C%20arac%C4%B1m%20i%C3%A7in%20%C3%B6n%20de%C4%9Ferlendirme%20almak%20istiyorum."
           target="_blank"
+          rel="noopener noreferrer"
         >
           WhatsApp’tan Değerlendir
         </a>
