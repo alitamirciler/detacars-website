@@ -407,27 +407,25 @@ export default function AraciniziTakasaVermedenOnceBilmenizGerekenlerPage() {
         </div>
 
         <section className="articleCta">
-          <p className="articleEyebrow">Detacars Ön Değerlendirme</p>
+  <p className="articleEyebrow">Detacars Takas</p>
 
-          <h2>Aldığınız takas teklifini birlikte değerlendirelim</h2>
+  <h2>Aracınızı değiştirmek mi istiyorsunuz?</h2>
 
-          <p>
-            Mevcut aracınızın ve satın almak istediğiniz aracın marka, model,
-            kilometre, hasar ve fiyat bilgilerini WhatsApp üzerinden
-            paylaşabilirsiniz. İki araç arasındaki farkı piyasa verileri
-            doğrultusunda birlikte değerlendirelim.
-          </p>
+  <p>
+    Mevcut aracınızın bilgilerini ve ilgilendiğiniz aracı WhatsApp üzerinden
+    paylaşın. Detacars stokları veya araç tedarik imkânlarımız kapsamında
+    uygun bir takas seçeneği varsa size net fark teklifimizi iletelim.
+  </p>
 
-          <a
-            className="primary"
-            href="https://wa.me/905383642991?text=Merhaba%2C%20ald%C4%B1%C4%9F%C4%B1m%20takas%20teklifini%20de%C4%9Ferlendirmek%20istiyorum."
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Takas Teklifini Değerlendir
-          </a>
-        </section>
-
+  <a
+    className="primary"
+    href="https://wa.me/905383642991?text=Merhaba%2C%20mevcut%20arac%C4%B1m%C4%B1%20de%C4%9Fi%C5%9Ftirerek%20yeni%20bir%20ara%C3%A7%20almak%20istiyorum.%20Takas%20imk%C3%A2n%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Takas İmkânını Sor
+  </a>
+</section>
         <nav className="articleNavigation">
           <Link href="/rehberler/filo-cikmasi-arac-alinir-mi">
             <ArrowLeft size={18} />
