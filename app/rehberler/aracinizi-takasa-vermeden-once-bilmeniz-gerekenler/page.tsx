@@ -426,24 +426,19 @@ export default function AraciniziTakasaVermedenOnceBilmenizGerekenlerPage() {
     Takas İmkânını Sor
   </a>
 </section>
-        <nav className="articleNavigation">
-          <Link href="/rehberler/filo-cikmasi-arac-alinir-mi">
-            <ArrowLeft size={18} />
-            <span>
-              <small>Önceki rehber</small>
-              Filo Çıkması Araç Alınır mı?
-            </span>
-          </Link>
 
-          <Link href="/rehberler">
-            <span>
-              <small>Tüm içerikler</small>
-              Rehberlere Dön
-            </span>
-            <ArrowRight size={18} />
-          </Link>
-        </nav>
-      </article>
-    </main>
-  );
+<nav className="articleNavigation">
+  <Link href="/rehberler/filo-cikmasi-arac-alinir-mi">
+    ← Filo Çıkması Araç Alınır mı?
+ <Link
+  href="/rehberler/boyali-veya-degisenli-arac-alinir-mi"
+  className="articleNavigationNext"
+>
+  Boyalı veya Değişenli Araç Alınır mı? →
+</Link>
+</nav>
+
+</article>
+</main>
+);
 }
