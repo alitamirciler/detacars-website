@@ -2,6 +2,7 @@ import Link from 'next/link';
 import {
   ArrowRight,
   Calculator,
+  CarFront,
   FileSearch,
   Handshake,
   ShieldCheck,
@@ -22,6 +23,14 @@ const guides = [
       'Ekspertiz raporundaki boya, değişen, mekanik ve elektronik kontrollerin araç değerine etkisini sade şekilde açıklıyoruz.',
     href: '/rehberler/ekspertiz-raporu-nasil-yorumlanir',
     icon: FileSearch,
+    published: true,
+  },
+  {
+    title: 'Filo Çıkması Araç Alınır mı?',
+    description:
+      'Filo çıkışlı araçların kullanım biçimini, servis geçmişini, ekspertiz durumunu ve fiyat-kondisyon ilişkisini gerçek saha tecrübeleriyle değerlendiriyoruz.',
+    href: '/rehberler/filo-cikmasi-arac-alinir-mi',
+    icon: CarFront,
     published: true,
   },
   {
@@ -111,6 +120,7 @@ export default function RehberlerPage() {
 
       <section className="guideCta">
         <h2>Aracınız için ön değerlendirme almak ister misiniz?</h2>
+
         <p>
           Marka, model, kilometre ve hasar bilgilerini WhatsApp üzerinden
           gönderin. Aracınızı piyasa verileri doğrultusunda değerlendirelim.
