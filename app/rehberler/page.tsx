@@ -34,13 +34,13 @@ const guides = [
     published: true,
   },
   {
-    title: 'Takaslı Araç Satışı Nasıl Yapılır?',
-    description:
-      'Aracınızı takasa vermeden önce fiyat, fark ödemesi, ekspertiz ve noter sürecinde dikkat etmeniz gerekenleri özetliyoruz.',
-    href: '',
-    icon: Handshake,
-    published: false,
-  },
+  title: 'Aracınızı Takasa Vermeden Önce Bilmeniz Gerekenler',
+  description:
+    'Takas teklifini değerlendirirken yalnızca aracınıza verilen rakama değil, iki aracın gerçek piyasa değeri arasındaki farka nasıl bakmanız gerektiğini anlatıyoruz.',
+  href: '/rehberler/aracinizi-takasa-vermeden-once-bilmeniz-gerekenler',
+  icon: Handshake,
+  published: true,
+},
   {
     title: 'İkinci El Araç Satarken Nelere Dikkat Edilmeli?',
     description:
