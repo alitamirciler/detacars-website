@@ -407,9 +407,7 @@ export default function AraciniziTakasaVermedenOnceBilmenizGerekenlerPage() {
         </div>
 
         <section className="articleCta">
-  <p className="articleEyebrow">Detacars Takas</p>
-
-  <h2>Aracınızı değiştirmek mi istiyorsunuz?</h2>
+    <h2>Aracınızı değiştirmek mi istiyorsunuz?</h2>
 
   <p>
     Mevcut aracınızın bilgilerini ve ilgilendiğiniz aracı WhatsApp üzerinden
