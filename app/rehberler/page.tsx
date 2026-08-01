@@ -33,6 +33,14 @@ const guides = [
     icon: CarFront,
     published: true,
   },
+{
+  title: 'Boyalı veya Değişenli Araç Alınır mı?',
+  description:
+    'Boya ve değişenin tek başına neden kötü araç anlamına gelmediğini; hasarın yeri, yapısal durum, satış hızı ve fiyat avantajı üzerinden anlatıyoruz.',
+  href: '/rehberler/boyali-veya-degisenli-arac-alinir-mi',
+  icon: FileSearch,
+  published: true,
+},
   {
   title: 'Aracınızı Takasa Vermeden Önce Bilmeniz Gerekenler',
   description:
