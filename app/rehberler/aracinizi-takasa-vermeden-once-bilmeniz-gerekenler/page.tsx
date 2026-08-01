@@ -430,12 +430,14 @@ export default function AraciniziTakasaVermedenOnceBilmenizGerekenlerPage() {
 <nav className="articleNavigation">
   <Link href="/rehberler/filo-cikmasi-arac-alinir-mi">
     ← Filo Çıkması Araç Alınır mı?
- <Link
-  href="/rehberler/boyali-veya-degisenli-arac-alinir-mi"
-  className="articleNavigationNext"
->
-  Boyalı veya Değişenli Araç Alınır mı? →
-</Link>
+  </Link>
+
+  <Link
+    href="/rehberler"
+    className="articleNavigationNext"
+  >
+    Rehberlere Dön →
+  </Link>
 </nav>
 
 </article>
