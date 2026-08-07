@@ -447,22 +447,33 @@ nav{display:flex;gap:28px;color:#333}
   font-weight:800;
 }
 
+
 .articleNavigation{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:18px;
   margin-top:34px;
+  position:static;
+  overflow:visible;
+  padding:0;
+  background:transparent;
+  border-bottom:0;
+  white-space:normal;
+  font-size:inherit;
 }
 
 .articleNavigation a{
   display:flex;
   flex-direction:column;
   justify-content:center;
+  min-width:0;
   min-height:104px;
   padding:20px 22px;
   border:1px solid #e7e7e7;
   border-radius:16px;
   background:#fff;
+  white-space:normal;
+  overflow-wrap:break-word;
   transition:border-color .2s ease, transform .2s ease;
 }
 
@@ -544,7 +555,29 @@ nav{display:flex;gap:28px;color:#333}
   }
 
   .articleNavigation{
+    display:grid;
     grid-template-columns:1fr;
+    gap:14px;
+    margin-top:34px;
+    position:static;
+    left:auto;
+    right:auto;
+    top:auto;
+    overflow:visible;
+    padding:0;
+    background:transparent;
+    border-bottom:0;
+    white-space:normal;
+    font-size:inherit;
+  }
+
+  .articleNavigation a{
+    width:100%;
+    min-width:0;
+    min-height:92px;
+    padding:18px 20px;
+    white-space:normal;
+    overflow-wrap:break-word;
   }
 
   .articleNavigation .articleNavigationNext{
