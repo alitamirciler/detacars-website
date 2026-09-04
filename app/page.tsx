@@ -59,7 +59,7 @@ export default function Home() {
         </div>
 
         <nav>
-          <a href="#arac-alim">Araç Alım</a>
+          <a href="/arac-sat">Araç Alım</a>
   	<a href="#satis">Satıştaki Araçlar</a>
   	<a href="/rehberler">Rehberler</a>
   	<a href="#hakkimizda">Hakkımızda</a>
@@ -196,8 +196,8 @@ export default function Home() {
         </div>
 
         <div className="centerCta">
-          <a className="primary" href={whatsappUrl} target="_blank">
-            <MessageCircle size={20} /> WhatsApp’tan Değerlendir
+          <a className="primary" href="/arac-sat">
+            <MessageCircle size={20} /> Aracım İçin Teklif Al
           </a>
         </div>
       </section>

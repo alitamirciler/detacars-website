@@ -584,3 +584,255 @@ nav{display:flex;gap:28px;color:#333}
     text-align:left;
   }
 }
+/* Araç Sat sayfası */
+.sellHero{
+  padding:92px 6vw 82px;
+  background:#f6f7f6;
+  text-align:center;
+}
+
+.sellHeroInner{
+  max-width:900px;
+  margin:0 auto;
+}
+
+.sellHero h1{
+  max-width:900px;
+  margin:14px auto 22px;
+  font-size:54px;
+  line-height:1.08;
+  letter-spacing:-1.2px;
+}
+
+.sellLead{
+  max-width:790px;
+  margin:0 auto;
+  color:#555;
+  font-size:20px;
+  line-height:1.7;
+}
+
+.sellHeroActions{
+  margin-top:32px;
+  display:flex;
+  justify-content:center;
+}
+
+.sellTrustRow{
+  margin-top:28px;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px 24px;
+  color:#444;
+  font-size:15px;
+  font-weight:700;
+}
+
+.sellTrustRow span{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+}
+
+.sellTrustRow svg{
+  color:#0e9f45;
+}
+
+.sellTextBlock{
+  max-width:900px;
+  margin:0 auto;
+  color:#444;
+  font-size:18px;
+  line-height:1.9;
+}
+
+.sellTextBlock p{
+  margin:0 0 18px;
+}
+
+.sellFactorGrid{
+  max-width:1120px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+
+.sellFactorGrid article{
+  border:1px solid #eee;
+  border-radius:22px;
+  padding:28px 30px;
+  background:#fff;
+  box-shadow:0 10px 35px rgba(0,0,0,.05);
+}
+
+.sellFactorGrid article:nth-child(4),
+.sellFactorGrid article:nth-child(5){
+  grid-column:span 1;
+}
+
+.sellFactorGrid svg{
+  width:34px;
+  height:34px;
+  margin-bottom:18px;
+  color:#0e8f3d;
+}
+
+.sellFactorGrid h3{
+  margin:0 0 12px;
+  font-size:22px;
+  line-height:1.25;
+}
+
+.sellFactorGrid p{
+  margin:0;
+  color:#555;
+  font-size:17px;
+  line-height:1.7;
+}
+
+.sellSegmentSection{
+  padding:92px 6vw;
+  background:linear-gradient(90deg,#050505 0%,#111 60%,#2a2a2a 100%);
+  color:#fff;
+}
+
+.sellSegmentSection>div{
+  max-width:900px;
+}
+
+.sellSegmentSection h2{
+  margin:12px 0 20px;
+  font-size:38px;
+  line-height:1.18;
+  letter-spacing:-.8px;
+}
+
+.sellSegmentSection p{
+  max-width:850px;
+  margin:0 0 16px;
+  color:#e8e8e8;
+  font-size:18px;
+  line-height:1.75;
+}
+
+.sellSegmentSection .sellSegmentNote{
+  margin-top:24px;
+  color:#bdbdbd;
+  font-size:15px;
+}
+
+.sellFaqSection{
+  padding:82px 6vw 88px;
+  background:#fff;
+}
+
+.sellFaqList{
+  max-width:900px;
+  margin:0 auto;
+  display:grid;
+  gap:14px;
+}
+
+.sellFaqList details{
+  border:1px solid #e8e8e8;
+  border-radius:16px;
+  background:#fff;
+  padding:0 22px;
+}
+
+.sellFaqList summary{
+  cursor:pointer;
+  padding:22px 0;
+  font-size:19px;
+  font-weight:800;
+  line-height:1.4;
+}
+
+.sellFaqList details p{
+  margin:0;
+  padding:0 0 22px;
+  color:#555;
+  font-size:17px;
+  line-height:1.75;
+}
+
+.sellFinalCta{
+  max-width:none;
+}
+
+@media(max-width:900px){
+  .sellHero{
+    padding:64px 28px 62px;
+  }
+
+  .sellHero h1{
+    font-size:38px;
+    line-height:1.14;
+    letter-spacing:-.7px;
+  }
+
+  .sellLead{
+    font-size:18px;
+    line-height:1.65;
+  }
+
+  .sellHeroActions{
+    align-items:stretch;
+  }
+
+  .sellTrustRow{
+    margin-top:24px;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+  }
+
+  .sellTextBlock{
+    font-size:17px;
+    line-height:1.8;
+  }
+
+  .sellFactorGrid{
+    grid-template-columns:1fr;
+  }
+
+  .sellFactorGrid article:nth-child(4),
+  .sellFactorGrid article:nth-child(5){
+    grid-column:auto;
+  }
+
+  .sellFactorGrid article{
+    padding:28px;
+  }
+
+  .sellFactorGrid p{
+    font-size:18px;
+  }
+
+  .sellSegmentSection{
+    padding:72px 28px;
+    background:#101010;
+  }
+
+  .sellSegmentSection h2{
+    font-size:32px;
+  }
+
+  .sellSegmentSection p{
+    font-size:18px;
+  }
+
+  .sellFaqSection{
+    padding:62px 28px 72px;
+  }
+
+  .sellFaqList details{
+    padding:0 18px;
+  }
+
+  .sellFaqList summary{
+    font-size:18px;
+  }
+}
