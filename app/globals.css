@@ -640,7 +640,7 @@ nav{display:flex;gap:28px;color:#333}
 }
 
 .sellTextBlock{
-  max-width:900px;
+  max-width:820px;
   margin:0 auto;
   color:#444;
   font-size:18px;
@@ -651,12 +651,17 @@ nav{display:flex;gap:28px;color:#333}
   margin:0 0 18px;
 }
 
+.sellHero + .section .sectionHead{
+  max-width:820px;
+}
+
 .sellFactorGrid{
   max-width:1120px;
   margin:0 auto;
   display:grid;
-  grid-template-columns:repeat(3,1fr);
+  grid-template-columns:repeat(3,minmax(0,1fr));
   gap:24px;
+  align-items:stretch;
 }
 
 .sellFactorGrid article{
@@ -665,6 +670,9 @@ nav{display:flex;gap:28px;color:#333}
   padding:28px 30px;
   background:#fff;
   box-shadow:0 10px 35px rgba(0,0,0,.05);
+  display:flex;
+  flex-direction:column;
+  min-height:268px;
 }
 
 .sellFactorGrid article:nth-child(4),
@@ -681,6 +689,7 @@ nav{display:flex;gap:28px;color:#333}
 
 .sellFactorGrid h3{
   margin:0 0 12px;
+  min-height:55px;
   font-size:22px;
   line-height:1.25;
 }
@@ -690,6 +699,14 @@ nav{display:flex;gap:28px;color:#333}
   color:#555;
   font-size:17px;
   line-height:1.7;
+}
+
+.sellProcessCards article{
+  min-height:258px;
+}
+
+.sellProcessCards h3{
+  min-height:55px;
 }
 
 .sellSegmentSection{
@@ -805,13 +822,31 @@ nav{display:flex;gap:28px;color:#333}
 
   .sellFactorGrid article{
     padding:28px;
+    min-height:0;
+  }
+
+  .sellFactorGrid h3,
+  .sellProcessCards h3{
+    min-height:0;
+  }
+
+  .sellProcessCards article{
+    min-height:0;
   }
 
   .sellFactorGrid p{
     font-size:18px;
   }
 
-  .sellSegmentSection{
+  .sellProcessCards article{
+  min-height:258px;
+}
+
+.sellProcessCards h3{
+  min-height:55px;
+}
+
+.sellSegmentSection{
     padding:72px 28px;
     background:#101010;
   }

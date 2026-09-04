@@ -164,21 +164,21 @@ export default function AracSatPage() {
 
       <section className="section">
         <div className="sectionHead">
-          <p className="eyebrow dark">Araç satışı</p>
-          <h2>Aracınızı satarken tek seçeneğe bağlı kalmayın.</h2>
+          <p className="eyebrow dark">Araç alım</p>
+          <h2>Aracınızı şeffaf şekilde değerlendirelim</h2>
           <p>
-            Aracınız için aldığınız teklifin piyasa koşullarına uygun olup olmadığını
-            anlamanın en sağlıklı yollarından biri farklı alım tekliflerini karşılaştırmaktır.
-            Detacars’tan da ücretsiz bir ön değerlendirme alabilirsiniz.
+            Araç değerlemesinde amacımız yalnızca teklif vermek değil, fiyatın nasıl
+            oluştuğunu da açıkça paylaşmaktır. Böylece aracınız için yaptığımız
+            değerlendirmenin neye dayandığını bilirsiniz.
           </p>
         </div>
 
         <div className="sellTextBlock">
           <p>
-            Marka, model, yıl, kilometre, donanım, hasar geçmişi, kondisyon ve güncel
-            piyasa koşullarını birlikte inceler; satın almak istediğimiz araçlar için
-            kendi alım teklifimizi iletiriz. Teklifimizi diğer satış seçeneklerinizle
-            karşılaştırabilir, kararınızı daha sonra verebilirsiniz.
+            Marka, model, yıl, kilometre, paket, hasar geçmişi ve kondisyon gibi temel
+            bilgileri güncel piyasa emsalleriyle birlikte inceleriz. Satın almak
+            istediğimiz araçlar için ön değerlendirmemizi ve teklifimizi paylaşırız.
+            Teklifi değerlendirip değerlendirmemek tamamen size kalır.
           </p>
         </div>
       </section>
@@ -186,35 +186,35 @@ export default function AracSatPage() {
       <section className="section muted">
         <div className="sectionHead">
           <p className="eyebrow dark">Süreç</p>
-          <h2>Detacars’a aracınızı nasıl satarsınız?</h2>
-          <p>İlk bilgiden noter işlemine kadar süreci mümkün olduğunca net tutuyoruz.</p>
+          <h2>Süreç nasıl ilerliyor?</h2>
+          <p>İlk araç bilgisinden ekspertiz ve noter aşamasına kadar süreci net tutuyoruz.</p>
         </div>
 
-        <div className="cards three processCards">
+        <div className="cards three processCards sellProcessCards">
           <article>
             <MessageCircle />
-            <h3>1. Araç bilgilerini paylaşın</h3>
+            <h3>1. Bilgileri paylaşın</h3>
             <p>
-              Marka, model, yıl, kilometre, paket ve araç geçmişini WhatsApp üzerinden
-              gönderin.
+              Marka, model, kilometre, paket, hasar ve varsa ekspertiz bilgilerini
+              WhatsApp üzerinden gönderin.
             </p>
           </article>
 
           <article>
             <Banknote />
-            <h3>2. Teklifimizi hazırlayalım</h3>
+            <h3>2. Ön değerlendirme alın</h3>
             <p>
-              Aracın özelliklerini, kondisyonunu ve güncel piyasa koşullarını birlikte
-              değerlendirerek ön alım teklifimizi oluşturalım.
+              Piyasa emsalleri ve aracın durumuna göre gerçekçi bir ön değerlendirme
+              ve satın alma teklifi paylaşalım.
             </p>
           </article>
 
           <article>
             <FileCheck />
-            <h3>3. Ekspertiz, ödeme ve noter</h3>
+            <h3>3. Ekspertiz, noter ve ödeme</h3>
             <p>
-              Teklif üzerinde anlaşılması halinde ekspertiz, ödeme ve noter sürecini
-              birlikte tamamlayalım.
+              Araç beyan edilen durumla uyumluysa ekspertiz sonrası noter ve ödeme
+              sürecini tamamlayalım.
             </p>
           </article>
         </div>
@@ -234,10 +234,10 @@ export default function AracSatPage() {
       <section className="section">
         <div className="sectionHead">
           <p className="eyebrow dark">Araç değerleme</p>
-          <h2>Aracınızın fiyatını belirlerken nelere bakıyoruz?</h2>
+          <h2>Aracınızı değerlendirirken nelere bakıyoruz?</h2>
           <p>
-            İlan fiyatını tek başına yeterli görmüyoruz. Aracın piyasadaki gerçek
-            konumunu birkaç farklı değişkeni birlikte değerlendirerek inceliyoruz.
+            Tek bir ilan fiyatına bakarak karar vermiyoruz. Aracın gerçek piyasa
+            karşılığını etkileyen temel unsurları birlikte değerlendiriyoruz.
           </p>
         </div>
 
@@ -246,8 +246,8 @@ export default function AracSatPage() {
             <SearchCheck />
             <h3>Emsal araçlar</h3>
             <p>
-              İlanlarda görülen fiyatları tek başına referans almak yerine aracın gerçek
-              rakiplerini ve piyasa konumunu değerlendiririz.
+              Aynı model, yıl ve benzer özelliklerdeki araçların ilan ve satış
+              seviyelerini birlikte değerlendiririz.
             </p>
           </article>
 
@@ -255,8 +255,8 @@ export default function AracSatPage() {
             <Gauge />
             <h3>Kilometre ve kullanım</h3>
             <p>
-              Aynı model ve yıldaki iki aracın kilometresi, kullanım geçmişi ve
-              kondisyonu ciddi fiyat farkı oluşturabilir.
+              Kilometre, kullanım şekli ve genel kondisyon aynı model iki araç arasında
+              önemli değer farkı oluşturabilir.
             </p>
           </article>
 
@@ -264,8 +264,8 @@ export default function AracSatPage() {
             <Wrench />
             <h3>Boya, değişen ve hasar geçmişi</h3>
             <p>
-              Her boya veya değişen parça aynı şekilde değerlendirilmez. İşlemin yeri,
-              niteliği ve aracın genel yapısına etkisi önemlidir.
+              Boya, değişen ve hasar geçmişini tek başına değil; işlemin yeri, niteliği
+              ve aracın genel durumu ile birlikte değerlendiririz.
             </p>
           </article>
 
@@ -273,8 +273,8 @@ export default function AracSatPage() {
             <BadgeCheck />
             <h3>Donanım ve kombinasyon</h3>
             <p>
-              Motor, paket, renk ve opsiyonlar aracın satılabilirliğini ve piyasa
-              karşılığını değiştirebilir.
+              Motor, paket, renk ve opsiyonlar aracın piyasadaki talebini ve değerini
+              doğrudan etkileyebilir.
             </p>
           </article>
 
@@ -282,8 +282,8 @@ export default function AracSatPage() {
             <Car />
             <h3>Piyasadaki talep</h3>
             <p>
-              Bir aracın ilan fiyatı kadar, hangi sürede ve hangi fiyat seviyesinde
-              satılabildiği de değerlendirmede önemlidir.
+              Aracın yalnızca ilan fiyatına değil, piyasadaki talebine ve gerçek satış
+              hızına da bakarız.
             </p>
           </article>
 
@@ -291,8 +291,8 @@ export default function AracSatPage() {
             <FileCheck />
             <h3>Bakım ve servis geçmişi</h3>
             <p>
-              Düzenli bakım geçmişi, servis kayıtları ve aracın kullanım boyunca nasıl
-              korunduğu genel değerlendirmeyi etkileyen unsurlar arasındadır.
+              Bakım geçmişi, servis kayıtları ve aracın kullanım boyunca nasıl korunduğu
+              genel değerlendirmeyi etkiler.
             </p>
           </article>
         </div>
@@ -303,15 +303,14 @@ export default function AracSatPage() {
           <p className="eyebrow">Hangi araçlarla ilgileniyoruz?</p>
           <h2>Özellikle orta üst ve premium segment araçları değerlendiriyoruz.</h2>
           <p>
-            Detacars farklı marka ve modellerde araçları değerlendirir. Ticari
-            faaliyetimizin önemli bir bölümünü orta üst ve premium segment otomobiller
-            oluşturduğu için bu araçların donanım, kombinasyon, kondisyon ve ikinci el
-            piyasa dinamiklerini yakından takip ediyoruz.
+            Detacars farklı marka ve modellerde araç alımı yapar. Özellikle orta üst ve
+            premium segment araçların piyasa dinamikleri, donanım seçenekleri ve alıcı
+            beklentileri günlük işimizin önemli bir bölümünü oluşturur.
           </p>
           <p className="sellSegmentNote">
-            Araç yaşı, kilometresi, kondisyonu, piyasa talebi ve stok durumumuza göre
-            satın alma kararımız değişebilir. Ön değerlendirme talebi oluşturmanız
-            Detacars’ın aracı satın alacağını garanti etmez.
+            Her aracı kendi özellikleri içinde değerlendiririz. Yaş, kilometre,
+            kondisyon, hasar geçmişi, piyasa talebi ve mevcut stok durumumuz satın alma
+            kararımızı etkileyebilir.
           </p>
         </div>
       </section>
@@ -319,10 +318,10 @@ export default function AracSatPage() {
       <section className="section muted">
         <div className="sectionHead">
           <p className="eyebrow dark">Güvenli işlem</p>
-          <h2>Araç satışında süreç nasıl ilerliyor?</h2>
+          <h2>Ekspertizden ödemeye kadar net bir işlem süreci</h2>
           <p>
-            Yüksek tutarlı bir araç satışında yalnızca fiyat değil, işlemin nasıl
-            tamamlandığı da önemlidir.
+            Teklif üzerinde anlaşılması halinde ekspertiz, noter ve ödeme adımlarını
+            baştan konuşur, süreci mümkün olduğunca hızlı ve açık şekilde tamamlarız.
           </p>
         </div>
 
@@ -337,8 +336,8 @@ export default function AracSatPage() {
             <SearchCheck />
             <h3>Ekspertiz</h3>
             <p>
-              Nihai satın alma kararı aracın fiziki durumu ve ekspertiz sonucuyla birlikte
-              değerlendirilir.
+              Araç beyan edilen bilgilerle uyumluysa ekspertiz sonucunu birlikte
+              değerlendirerek işlemi ilerletiriz.
             </p>
           </article>
 
@@ -346,7 +345,8 @@ export default function AracSatPage() {
             <ShieldCheck />
             <h3>Ödeme ve noter</h3>
             <p>
-              Anlaşma sağlandığında satış, ödeme ve noter süreci birlikte planlanır.
+              Anlaşma sağlandığında noter ve ödeme adımlarını netleştirir, işlemi aynı
+              süreç içinde tamamlarız.
             </p>
           </article>
 
@@ -354,7 +354,8 @@ export default function AracSatPage() {
             <Phone />
             <h3>Doğrudan iletişim</h3>
             <p>
-              Araç değerlendirmesi boyunca Detacars ekibiyle doğrudan iletişim kurarsınız.
+              Değerlendirme ve satış boyunca doğrudan Detacars ekibiyle iletişim
+              kurarsınız.
             </p>
           </article>
         </div>
@@ -363,51 +364,51 @@ export default function AracSatPage() {
       <section className="sellFaqSection">
         <div className="sectionHead">
           <p className="eyebrow dark">Sık sorulan sorular</p>
-          <h2>Aracınızı satmadan önce merak edebilecekleriniz</h2>
+          <h2>Araç alımı hakkında sık sorulanlar</h2>
         </div>
 
         <div className="sellFaqList">
           <details>
             <summary>Aracımın değerini nasıl öğrenebilirim?</summary>
             <p>
-              Araç bilgilerinizi paylaşarak Detacars’tan ön değerlendirme talep
-              edebilirsiniz. Nihai satın alma teklifi aracın detayları ve gerektiğinde
-              fiziki inceleme veya ekspertiz sonrasında netleşir.
+              Marka, model, kilometre, paket, hasar ve varsa ekspertiz bilgilerini
+              bizimle paylaşın. Piyasa emsalleri ve aracın durumuna göre ön
+              değerlendirmemizi iletelim. Nihai teklif ekspertiz sonrasında netleşebilir.
             </p>
           </details>
 
           <details>
             <summary>Detacars her aracı satın alıyor mu?</summary>
             <p>
-              Hayır. Araç yaşı, kilometresi, kondisyonu, piyasa talebi ve stok durumumuza
-              göre satın alma kararımız değişebilir.
+              Hayır. Aracı yaş, kilometre, kondisyon, hasar geçmişi, piyasa talebi ve
+              mevcut stok durumumuza göre değerlendiririz.
             </p>
           </details>
 
           <details>
             <summary>Teklif almak aracımı satmak zorunda olduğum anlamına gelir mi?</summary>
             <p>
-              Hayır. Teklifimizi değerlendirebilir veya diğer satış seçeneklerinizle
-              karşılaştırabilirsiniz.
+              Hayır. Ön değerlendirme ve teklif herhangi bir satış zorunluluğu yaratmaz.
+              Teklifimizi diğer seçeneklerinizle karşılaştırabilirsiniz.
             </p>
           </details>
 
           <details>
             <summary>Boyalı veya değişenli araçları alıyor musunuz?</summary>
             <p>
-              Araç özelinde değerlendiriyoruz. Boyalı veya değişenli olması tek başına
-              olumsuz karar sebebi değildir; işlemin yeri, niteliği ve aracın genel
-              durumu birlikte değerlendirilir.
+              Evet, araç özelinde değerlendiriyoruz. Boya veya değişen tek başına aracı
+              değerlendirme dışı bırakmaz; işlemin yeri, niteliği ve aracın genel durumu
+              önemlidir.
             </p>
           </details>
         </div>
       </section>
 
       <section className="finalCta sellFinalCta">
-        <h2>Aracınızı satmadan önce bir teklif de Detacars’tan alın.</h2>
+        <h2>Aracınızı birlikte değerlendirelim.</h2>
         <p>
-          Marka, model, yıl ve kilometre bilgilerini paylaşın. Aracınızı değerlendirelim
-          ve satın almak istediğimiz araçlar için teklifimizi iletelim.
+          Araç bilgilerinizi paylaşın. Piyasa emsalleri ve aracın durumuna göre ön
+          değerlendirmemizi yapıp satın alma teklifimizi iletelim.
         </p>
 
         <a

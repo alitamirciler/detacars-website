@@ -82,7 +82,7 @@ export default function Home() {
 
           <div className="heroActions">
             <a className="primary heroButton" href="/arac-sat">
-              <Car size={20} /> Aracımı Satmak İstiyorum
+              Aracımı Satmak İstiyorum
             </a>
             <a className="secondaryDark heroButton" href={sahibindenUrl} target="_blank">
               Satıştaki Araçlar
