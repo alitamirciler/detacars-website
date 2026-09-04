@@ -165,24 +165,20 @@ export default function AracSatPage() {
       <section className="section">
         <div className="sectionHead">
           <p className="eyebrow dark">Araç satışı</p>
-          <h2>Aracınızı satmak için nereden başlayacağınızı bilmiyor musunuz?</h2>
+          <h2>Aracınızı satarken tek seçeneğe bağlı kalmayın.</h2>
           <p>
-            Aracım ne kadar eder, ilan mı vermeliyim, galeriye mi satmalıyım, aldığım
-            teklif piyasa koşullarına uygun mu? Detacars’ta süreç aracınızın temel
-            bilgilerinin değerlendirilmesiyle başlar.
+            Aracınız için aldığınız teklifin piyasa koşullarına uygun olup olmadığını
+            anlamanın en sağlıklı yollarından biri farklı alım tekliflerini karşılaştırmaktır.
+            Detacars’tan da ücretsiz bir ön değerlendirme alabilirsiniz.
           </p>
         </div>
 
         <div className="sellTextBlock">
           <p>
             Marka, model, yıl, kilometre, donanım, hasar geçmişi, kondisyon ve güncel
-            piyasa koşullarını birlikte inceleriz. Bu değerlendirme sonucunda satın
-            almak istediğimiz araçlar için kendi alım teklifimizi iletiriz.
-          </p>
-          <p>
-            Teklifimizi değerlendirmek veya başka tekliflerinizle karşılaştırmak tamamen
-            size kalır. Ön değerlendirme talebi oluşturmanız aracınızı Detacars’a satmak
-            zorunda olduğunuz anlamına gelmez.
+            piyasa koşullarını birlikte inceler; satın almak istediğimiz araçlar için
+            kendi alım teklifimizi iletiriz. Teklifimizi diğer satış seçeneklerinizle
+            karşılaştırabilir, kararınızı daha sonra verebilirsiniz.
           </p>
         </div>
       </section>
@@ -290,6 +286,15 @@ export default function AracSatPage() {
               satılabildiği de değerlendirmede önemlidir.
             </p>
           </article>
+
+          <article>
+            <FileCheck />
+            <h3>Bakım ve servis geçmişi</h3>
+            <p>
+              Düzenli bakım geçmişi, servis kayıtları ve aracın kullanım boyunca nasıl
+              korunduğu genel değerlendirmeyi etkileyen unsurlar arasındadır.
+            </p>
+          </article>
         </div>
       </section>
 
@@ -298,13 +303,10 @@ export default function AracSatPage() {
           <p className="eyebrow">Hangi araçlarla ilgileniyoruz?</p>
           <h2>Özellikle orta üst ve premium segment araçları değerlendiriyoruz.</h2>
           <p>
-            Detacars farklı marka ve modellerde araçları değerlendirir. Özellikle orta
-            üst ve premium segment otomobiller ticari faaliyetimizin önemli bir bölümünü
-            oluşturur.
-          </p>
-          <p>
-            BMW, Mercedes-Benz, Audi, Volvo, Volkswagen, Land Rover, Porsche ve benzeri
-            segmentlerdeki araçlar için de değerlendirme talebi oluşturabilirsiniz.
+            Detacars farklı marka ve modellerde araçları değerlendirir. Ticari
+            faaliyetimizin önemli bir bölümünü orta üst ve premium segment otomobiller
+            oluşturduğu için bu araçların donanım, kombinasyon, kondisyon ve ikinci el
+            piyasa dinamiklerini yakından takip ediyoruz.
           </p>
           <p className="sellSegmentNote">
             Araç yaşı, kilometresi, kondisyonu, piyasa talebi ve stok durumumuza göre

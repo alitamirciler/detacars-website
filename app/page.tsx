@@ -81,8 +81,8 @@ export default function Home() {
           </p>
 
           <div className="heroActions">
-            <a className="primary heroButton" href={whatsappUrl} target="_blank">
-              <MessageCircle size={20} /> Aracımı Değerlendir
+            <a className="primary heroButton" href="/arac-sat">
+              <Car size={20} /> Aracımı Satmak İstiyorum
             </a>
             <a className="secondaryDark heroButton" href={sahibindenUrl} target="_blank">
               Satıştaki Araçlar
