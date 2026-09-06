@@ -162,8 +162,8 @@ export default function AracSatPage() {
         </div>
       </section>
 
-      <section className="section">
-        <div className="sectionHead">
+      <section className="section sellIntroSection">
+        <div className="sectionHead sellIntroHead">
           <p className="eyebrow dark">Araç alım</p>
           <h2>Aracınızı şeffaf şekilde değerlendirelim</h2>
           <p>
@@ -171,9 +171,6 @@ export default function AracSatPage() {
             oluştuğunu da açıkça paylaşmaktır. Böylece aracınız için yaptığımız
             değerlendirmenin neye dayandığını bilirsiniz.
           </p>
-        </div>
-
-        <div className="sellTextBlock">
           <p>
             Marka, model, yıl, kilometre, paket, hasar geçmişi ve kondisyon gibi temel
             bilgileri güncel piyasa emsalleriyle birlikte inceleriz. Satın almak

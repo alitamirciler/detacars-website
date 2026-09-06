@@ -639,20 +639,24 @@ nav{display:flex;gap:28px;color:#333}
   color:#0e9f45;
 }
 
-.sellTextBlock{
-  max-width:820px;
-  margin:0 auto;
-  color:#444;
-  font-size:18px;
-  line-height:1.9;
+.sellIntroSection{
+  padding-top:76px;
+  padding-bottom:82px;
 }
 
-.sellTextBlock p{
-  margin:0 0 18px;
+.sellIntroHead{
+  max-width:900px;
+  margin-bottom:0;
 }
 
-.sellHero + .section .sectionHead{
+.sellIntroHead p{
   max-width:820px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.sellIntroHead p + p{
+  margin-top:22px;
 }
 
 .sellFactorGrid{
@@ -806,9 +810,13 @@ nav{display:flex;gap:28px;color:#333}
     gap:10px;
   }
 
-  .sellTextBlock{
-    font-size:17px;
-    line-height:1.8;
+  .sellIntroSection{
+    padding-top:58px;
+    padding-bottom:64px;
+  }
+
+  .sellIntroHead p + p{
+    margin-top:18px;
   }
 
   .sellFactorGrid{
@@ -838,15 +846,7 @@ nav{display:flex;gap:28px;color:#333}
     font-size:18px;
   }
 
-  .sellProcessCards article{
-  min-height:258px;
-}
-
-.sellProcessCards h3{
-  min-height:55px;
-}
-
-.sellSegmentSection{
+  .sellSegmentSection{
     padding:72px 28px;
     background:#101010;
   }
