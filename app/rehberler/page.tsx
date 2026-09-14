@@ -69,7 +69,7 @@ export default function RehberlerPage() {
         </Link>
 
         <nav>
-          <Link href="/#arac-alim">Araç Alım</Link>
+          <Link href="/arac-sat">Araç Alım</Link>
           <Link href="/#satis">Satıştaki Araçlar</Link>
           <Link href="/rehberler">Rehberler</Link>
           <Link href="/#hakkimizda">Hakkımızda</Link>

@@ -196,7 +196,12 @@ export default function Home() {
         </div>
 
         <div className="centerCta">
-          <a className="primary" href="/arac-sat">
+          <a
+            className="primary"
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <MessageCircle size={20} /> Aracım İçin Teklif Al
           </a>
         </div>
